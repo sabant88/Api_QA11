@@ -27,11 +27,11 @@ public class DeleteContactByID {
         ContactDto contactDto = ContactDto.builder()
                 .address("pakistan")
                 .description("paki")
-                .email("paki@mail.ru")
+                .email("paki"+i+"@mail.ru")
                 .lastName("abed")
                 .name("mister")
                 .id(0)
-                .phone("108")
+                .phone("108"+i)
                 .build();
 
         RequestBody body = RequestBody.create(gson.toJson(contactDto), LoginTests.JSON);
